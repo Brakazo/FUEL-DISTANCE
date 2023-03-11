@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculatrice de distance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Une calculatrice de distance pour déterminer la distance maximale que vous pouvez parcourir en fonction de votre budget pour l'essence et la consommation de votre véhicule.">
+    <meta name="keywords" content="calculatrice, distance, budget, essence, voiture, consommation">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>FUEL-DISTANCE</h1>
+    <form>
+      <label for="argent">Entrez la somme d'argent disponible (en €) :</label>
+      <input type="text" id="argent" name="argent" aria-label="Entrez la somme d'argent disponible">
+      <span style="font-size: 12px;">(Par exemple : Si vous avez 50€ disponibles pour l'essence, entrez 50.)</span><br><br>
+      <label for="prix_essence">Entrez le prix actuel de l'essence (en €/L) :</label>
+      <input type="text" id="prix_essence" name="prix_essence" aria-label="Entrez le prix actuel de l'essence">
+      <span style="font-size: 12px;">(Par exemple : Si le prix actuel de l'essence est 1.5€/L, entrez 1.5.)</span><br><br>
+      <label for="consommation">Entrez la consommation de carburant de votre véhicule (en litres/100 km) :</label>
+      <input type="text" id="consommation" name="consommation" aria-label="Entrez la consommation de carburant de votre véhicule">
+      <span style="font-size: 12px;">(Par exemple : Si votre voiture consomme 6L/100km, entrez 6.)</span><br><br>
+      <input type="button" value="Calculer" onclick="calculerDistance()"><br><br>
+      <p>Vous pouvez parcourir une distance maximale de <span id="resultat">0</span> kilomètres.</p>
+
+    </form>
+
+<script src="./app.js"></script>
+  </body>
+</html>
